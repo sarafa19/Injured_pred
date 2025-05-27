@@ -2,6 +2,13 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
+import PIL
+
+print("Streamlit :", st.__version__)
+print("TensorFlow:", tf.__version__)
+print("NumPy     :", np.__version__)
+print("Pillow    :", PIL.__version__)
+
 
 @st.cache_resource
 def load_model():
